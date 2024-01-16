@@ -90,21 +90,10 @@ a {
     /* No underlining */
 }
 
-a:hover {
-    color: #cc6540;
-    text-decoration: underline;
-    /* Underlining when hovering over a link */
-}
-
 /*hyperlink visited color*/
 a:visited {
     /* visited link */
     color: #ff7f50;
-}
-
-a:active {
-    /* selected link */
-    color: #994c30;
 }
 
 /*hover styling*/
@@ -112,14 +101,12 @@ a:hover,
 a:focus {
     color: #cc6540;
     text-decoration: underline;
+
 }
 
-/*contact button styling*/
-.button.contact {
-    background-color: transparent;
-    color: #ff7f50;
-    text-transform: uppercase;
-    border: 2px solid #ff7f50;
+a:active {
+    /* selected link */
+    color: #994c30;
 }
 
 /*button styling*/
@@ -137,21 +124,43 @@ a:focus {
     transition: 0.2s opacity;
 }
 
+.button:visited {
+    /* Visited link */
+    color: #994c30;
+}
+
+.button:hover,
+.button:focus {
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}
+
 /*button active state*/
 .button:active {
     color: #ff7f50
 }
 
-/*button hover state*/
-.button:hover {
-    opacity: 0.9;
-    /* Reduces the opacity of the button to 90% */
-    text-decoration: none;
+/*contact button styling*/
+.button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+}
 
+.button.contact:visited,
+.button.resume:visited { /* Visited link */
+    color: #994c30;
 }
 
 /*contact button hover styling*/
 .button.contact:hover {
     background-color: #ff7f50;
     color: #ffffff;
+}
+
+.button.contact:active {
+/* Selected link */
+color: #994c30;
 }

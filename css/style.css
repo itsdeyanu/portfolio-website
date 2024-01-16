@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (white): #ffffff;
-Secondary Color (red-orange): #f25840;
+Secondary Color (caribbean current): #18635F;
 Text Color: (black): 4a4a4a
 */
 body {
@@ -83,7 +83,7 @@ img {
     width: 100%
 }
 
-/*hyperlink hovering color*/
+/*hyperlink color*/
 a {
     color: #ff7f50;
     text-decoration: none;
@@ -97,7 +97,6 @@ a:hover {
 }
 
 /*hyperlink visited color*/
-
 a:visited {
     /* visited link */
     color: #ff7f50;
@@ -114,40 +113,45 @@ a:focus {
     color: #cc6540;
     text-decoration: underline;
 }
+
 /*contact button styling*/
 .button.contact {
     background-color: transparent;
     color: #ff7f50;
     text-transform: uppercase;
     border: 2px solid #ff7f50;
-  }
+}
 
 /*button styling*/
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #ff7f50;
-    color: #ffffff; /* needed to override the default link color */
+    color: #ffffff;
+    /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30; /* width of the border, type, color */
+    border-bottom: 2px solid #994c30;
+    /* width of the border, type, color */
     transition: 0.2s opacity;
-  }
+}
 
-  /*button active state*/
-  .button:active {
-    color:#ff7f50
-  }
+/*button active state*/
+.button:active {
+    color: #ff7f50
+}
 
-  /*button hover state*/
-  .button:hover {
-    opacity: 0.9; /* Reduces the opacity of the button to 90% */
-    text-decoration: underline;
-    
-  }
+/*button hover state*/
+.button:hover {
+    opacity: 0.9;
+    /* Reduces the opacity of the button to 90% */
+    text-decoration: none;
 
-  /*contact button hover styling*/
-  .button.contact:hover {
+}
+
+/*contact button hover styling*/
+.button.contact:hover {
     background-color: #ff7f50;
     color: #ffffff;
-  }
+}

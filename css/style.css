@@ -4,6 +4,7 @@ Primary Color (white): #ffffff;
 Secondary Color (caribbean current): #18635F;
 Text Color: (black): 4a4a4a
 */
+
 * {
     box-sizing: border-box;
 }
@@ -176,7 +177,7 @@ header {
     background-color: #fbf5f3;
     text-align: center;
     padding: 10px 0;
-}
+    }
 
 .selector {
     margin: 0 auto;
@@ -185,6 +186,7 @@ header {
 
 /* Layout styling */
 .container {
+    max-width: 1200 px;
     padding: 0 15px;
 }
 
@@ -205,6 +207,13 @@ header {
     padding: 0.67em 0;
 }
 
+#hero {
+    background-color: #fbf5f3;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100;
+  }
+ 
 .center {
     text-align: center;
 }
@@ -218,44 +227,46 @@ header {
 /* icon sizing */
 .icon {
     max-width: 64px;
-    padding: 10px;  
+    padding: 10px;
 }
 
 nav > ul {
     list-style-type: none;
     padding: 0;
-  }
-
-  nav > ul > li {
     display: inline-block;
     width: 100%;
-  }
+}
 
-  nav > ul > li > a {
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
-  }
+}
 
-  nav > ul > li > a:visited {
+nav > ul > li > a:visited {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
-  }
+}
 
-  nav > ul > li > a:hover {
+nav > ul > li > a:hover {
     padding: 0 15px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
     color: #18635F;
-  }
-  nav > ul > li > a:active {
+}
+
+nav > ul > li > a:active {
     padding: 0 15px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
     color: #83494C;
-  }
+}

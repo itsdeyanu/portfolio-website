@@ -20,14 +20,17 @@
 
 <body>
 	<!-- For the header -->
-	<a id="top"></a>
-	<header id="navigation">
-		<img src="img/olive-app/small-pictures/logo.png" alt="Anupama Dey Logo">
+	<header>
+		<div class="container">
+			<img class="logo">
+				<img src="img/olive-app/small-pictures/website-logo.png" alt="Anupama Dey Logo">
+			</img>
+		</div>
 		<nav>
-			<ul>
+			<ul class="navigation">
 				<li><a href="index.html">Work</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="olive-app.html">Olive- Health and Wellness App</a></li>
+				<li><a href="olive-app.html">Olive App</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
@@ -35,55 +38,63 @@
 
 	<main>
 		<div id="hero">
-			<!-- For the hero section -->
-			<hi>Anupama Dey, UX Designer from San Francisco</h1>
-		</div>
+			<div class="'container">
+				<!-- For the hero section -->
+				<h1>Hi! I'm Anupama Dey.</h1>
 
-		<!-- For the work/projects -->
-		<div id="work">
-			<h2>Projects</h2>
-			<div><!-- open row that holds (2) columns for project -->
-				<div><!-- open first column (used for image) -->
-					<picture>
-						<source srcset="img/olive-app/small-pictures/olive-cover-image-1x.jpg"
-							media="(max-width:767px)">
-						<img src="img/olive-app/large-pictures/olive-hero-2x.jpg" alt="My Project Image">
-					</picture>
-				</div><!-- end first column -->
-				<div><!-- open second column (used for text) -->
-				</div>
-				<h3>Olive</h3>
-				<p>
-					A Health and Wellness App
+				<p>A UX Designer from San Francisco. Please feel free to explore the projects I have been working on!
 				</p>
-				<p>
-					Olive App showcases a careful blend of user-centric research techniques and a meticulous
-					application of Figma, resulting in a visually captivating and intuitive interface adhering to
-					Material Design principles.
-				</p>
-				<a href="https://uxfol.io/p/4c0bbff6/02d9a9df">View Project</a>
-				<!--added button -->
-				<a href="#" class="button">Read more</a>
-			</div><!-- end second column -->
-		</div><!-- end row that holds (2) columns for project -->
-		</div>
+			</div>
+
+			<!-- For the work/projects -->
+			<div id="work">
+				<div class="container">
+					<h2>Projects</h2>
+					<div class="row"><!-- open row that holds (2) columns for project -->
+						<div><!-- open first column (used for image) -->
+							<picture>
+								<source srcset="img/olive-app/small-pictures/olive-cover-image-1x.jpg"
+									media="(max-width:767px)">
+								<img src="img/olive-app/large-pictures/" alt="My Project Image">
+							</picture>
+						</div><!-- end first column -->
+						<div><!-- open second column (used for text) -->
+						</div>
+						<h3>Olive</h3>
+						<p>
+							A Health and Wellness App
+						</p>
+						<p>
+							Olive App showcases a careful blend of user-centric research techniques and a meticulous
+							application of Figma, resulting in a visually captivating and intuitive interface adhering
+							to
+							Material Design principles.
+						</p>
+						<!--added button -->
+						<a href="#" download target="_blank"> Read more</a>
+
+					</div><!-- end second column -->
+				</div><!-- end row that holds (2) columns for project -->
+			</div>
 	</main>
 
 	<!-- For the footer  -->
-	<footer id="contact">
-		<h2>Get in Touch</h2>
-		<p>
-			If you like what you see, then let's chat! Call: <a href="tel:+5101234567">+5101234567</a>
-		</p>
-		<div>
-			<a href="mailto:itsdeyanu@gmail.com">Send Email</a>
-		</div>
-		<div>
-			<!--Social Media Layout and Placeholders-->
-			<a href="LINKEDIN-URL" target="_blank">
-				<img src="">
-		</div>
-		<p>Copyright Anupama Dey 2024</p>
+	<footer>
+		<div class="container">
+			<h2>Get in Touch</h2>
+			<p>
+				If you like what you see, then let's chat! Call: <a href="tel:+5101234567">+5101234567</a>
+			</p>
+			<div>
+				<!--added button -->
+				<a href="mailto:itsdeyanu@gmail.com" class="button contact">Send Email</a>
+			</div>
+			<div class="icon">
+				<!--Social Media Layout and Placeholders-->
+				<a href="LINKEDIN-URL" target="_blank"></a>
+				<img src="img/olive-app/small-pictures/linkedin-icon.png">
+			</div>
+			<p>Copyright Anupama Dey 2024</p>
 		</div>
 	</footer>
 </body>

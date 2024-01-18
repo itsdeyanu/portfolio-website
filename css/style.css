@@ -4,6 +4,10 @@ Primary Color (white): #ffffff;
 Secondary Color (caribbean current): #18635F;
 Text Color: (black): 4a4a4a
 */
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: white;
     font-family: 'Lato', sans-serif;
@@ -85,82 +89,173 @@ img {
 
 /*hyperlink color*/
 a {
-    color: #ff7f50;
-    text-decoration: none;
-    /* No underlining */
+    color: #4a4a4a;
+    text-decoration: underline;
 }
 
 /*hyperlink visited color*/
 a:visited {
     /* visited link */
-    color: #ff7f50;
+    color: #83494C;
 }
 
-/*hover styling*/
+/*hyperlink hover styling*/
 a:hover,
 a:focus {
-    color: #cc6540;
+    color: #18635F;
     text-decoration: underline;
-
 }
 
+/* selected link */
 a:active {
-    /* selected link */
-    color: #994c30;
+    color: #18635F;
 }
 
 /*button styling*/
 .button {
     display: inline-block;
     /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #ff7f50;
+    background-color: #18635F;
     color: #ffffff;
     /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30;
+    border-bottom: 2px solid #18635F;
     /* width of the border, type, color */
     transition: 0.2s opacity;
 }
 
 .button:visited {
     /* Visited link */
-    color: #994c30;
+    color: #ffffff;
 }
 
 .button:hover,
 .button:focus {
-    opacity: 0.8;
+    background-color: #18635F;
+    color: #ffffff;
+    opacity: 0.9;
     /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
 
 /*button active state*/
 .button:active {
-    color: #ff7f50
+    color: #83494C;
 }
 
 /*contact button styling*/
 .button.contact {
-    background-color: transparent;
-    color: #ff7f50;
-    text-transform: uppercase;
-    border: 2px solid #ff7f50;
+    background-color: #18635F;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #18635F;
+    border: 2px solid #18635F;
 }
 
 .button.contact:visited,
-.button.resume:visited { /* Visited link */
-    color: #994c30;
+.button.resume:visited {
+    /* Visited link */
+    color: #ffffff;
 }
 
 /*contact button hover styling*/
 .button.contact:hover {
-    background-color: #ff7f50;
+    background-color: #18635F;
     color: #ffffff;
 }
 
 .button.contact:active {
-/* Selected link */
-color: #994c30;
+    /* Selected link */
+    color: #ffffff;
 }
+
+header {
+    background-color: #fbf5f3;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.selector {
+    margin: 0 auto;
+    /* No spacing to top and bottom and auto spacing to left and right */
+}
+
+/* Layout styling */
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+    /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+/* Centering text use this method or the one below. Add .center to any html element to be centered */
+#hero h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0.67em 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/* logo sizing*/
+.logo {
+    max-width: 150px;
+    text-align: center;
+}
+
+/* icon sizing */
+.icon {
+    max-width: 64px;
+    padding: 10px;  
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    width: 100%;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  nav > ul > li > a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  nav > ul > li > a:hover {
+    padding: 0 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #18635F;
+  }
+  nav > ul > li > a:active {
+    padding: 0 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #83494C;
+  }

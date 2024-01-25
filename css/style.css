@@ -209,8 +209,8 @@ header {
 /* Centering text use this method or the one below. Add .center to any html element to be centered */
 #hero h1 {
     text-align: center;
-    margin: 0;
-    padding: 1.65em 0; 
+    margin: 0; 
+    padding: 0.95 0;
 }
 
 #hero {

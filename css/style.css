@@ -124,6 +124,7 @@ a:active {
     /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
+    text-decoration: none;
     border-radius: 3px;
     border-bottom: 2px solid #18635F;
     /* width of the border, type, color */
@@ -181,8 +182,8 @@ header {
     text-align: center;
     position: fixed;
     padding-top: 10px;
-    width:100%;
-    }
+    width: 100%;
+}
 
 .selector {
     margin: 0 auto;
@@ -209,7 +210,7 @@ header {
 /* Centering text use this method or the one below. Add .center to any html element to be centered */
 #hero h1 {
     text-align: center;
-    margin: 0; 
+    margin: 0;
     padding: 0.67em 0;
 }
 
@@ -218,8 +219,8 @@ header {
     padding: 20px 0;
     display: inline-block;
     width: 100%;
-  }
- 
+}
+
 .center {
     text-align: center;
 }
@@ -236,32 +237,32 @@ header {
     padding: 10px;
 }
 
-nav > ul {
+nav>ul {
     list-style-type: none;
     padding: 0;
     display: inline-block;
     width: 100%;
 }
 
-nav > ul > li {
+nav>ul>li {
     display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
     padding: 0 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -269,7 +270,7 @@ nav > ul > li > a:hover {
     color: #18635F;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
     padding: 0 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -277,26 +278,159 @@ nav > ul > li > a:active {
     color: #83494C;
 }
 
+.sf-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #e3b99f;
+    }
+
+    50% {
+        fill: #e39666;
+    }
+
+    100% {
+        fill: #e37936;
+    }
+}
+
+@keyframes bird-move {
+    from {
+        transform: translate(50, 0px);
+    }
+
+    to {
+        transform: translate(50px, 40px);
+    }
+}
+
+@keyframes bird-move-reverse {
+    from {
+        transform: translate(50px, 5px);
+    }
+
+    to {
+        transform: translate(50px, 100px);
+    }
+}
+
+.bird {
+    animation: 3s bird-move infinite alternate linear;
+}
+
+.bird-back {
+    animation: 3s bird-move-reverse infinite alternate linear;
+}
+
+.sun circle {
+    animation: 5s color-change infinite alternate linear;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px
+    }
+
+    main {
+        padding-top: 165px;
+    }
+
+    body {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    #hero span {
+        display: block;
+    }
+
+    .col-md-6 {
+        width: 50%
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #about-page h3 {
+        margin-top: 0;
+    }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    .col-md-5 {
+        width: 41.66%
+    }
+
+    .col-md-7 {
+        width: 58.33%
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        font-size: 20px;
+        font-weight: 400;
+    }
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        font-size: 22px;
+        font-weight: 400;
+    }
 }
+
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        font-size: 24px;
+        font-weight: 400;
+    }
 }

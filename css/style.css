@@ -383,11 +383,11 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-    .col-md-5 {
+    .col-lg-5 {
         width: 41.66%
     }
 
-    .col-md-7 {
+    .col-lg-7 {
         width: 58.33%
     }
 

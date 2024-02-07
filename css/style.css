@@ -514,4 +514,7 @@ Extra-large devices (1920px or larger)
         display: inline-block;
     }
 
+    .navtoggle li:last-child {
+        display: none;
+    } 
 }

@@ -10,7 +10,7 @@ Text Color: (black): 4a4a4a
 }
 
 main {
-    padding-top: 225px;
+    padding-top: 100px;
 }
 
 body {
@@ -181,9 +181,8 @@ a:active {
 
 header {
     background-color: #fbf5f3;
-    text-align: center;
     position: fixed;
-    padding-top: 10px;
+    padding: 10px 0 4px;
     width: 100%;
 }
 
@@ -201,7 +200,7 @@ hr {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .row {
@@ -224,10 +223,7 @@ hr {
 #hero {
     background-color: #ffffff;
     padding: 20px 0;
-    display: inline-block;
-    width: 100%;
 }
-
 
 .center {
     text-align: center;
@@ -248,12 +244,40 @@ hr {
 nav>ul {
     list-style-type: none;
     padding: 0;
-    display: inline-block;
-    width: 100%;
+    margin: 0;
 }
 
-nav>ul>li {
-    display: inline-block;
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+    display: block;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #18635F;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
 }
 
 nav>ul>li>a {
@@ -348,11 +372,27 @@ Medium devices (640px and larger)
         padding: 20px 0 13px;
     }
 
+    nav>ul {
+        margin: 1em 0;
+    }
+
     nav {
         width: auto;
         float: right;
         margin-top: 4px
     }
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }  
 
     main {
         padding-top: 165px;
@@ -409,6 +449,22 @@ Large devices (1024px or larger)
         font-size: 20px;
         font-weight: 400;
     }
+
+    main {
+        padding-top: 200px
+    }
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    } 
 }
 
 /* ==============================
@@ -425,6 +481,18 @@ X-large devices (1440px or larger)
         font-size: 22px;
         font-weight: 400;
     }
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    } 
 }
 
 /* ==============================
@@ -441,4 +509,9 @@ Extra-large devices (1920px or larger)
         font-size: 24px;
         font-weight: 400;
     }
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
 }

@@ -267,18 +267,15 @@ nav>ul {
     padding-right: 0;
 }
 
-.navtoggle.responsive li  {
-    display: block;
-}
 
 .navtoggle.responsive nav {
-    padding: 24px 0 0;
+    padding: 0;
 }
 
-  .navtoggle.responsive li  {
+.navtoggle.responsive li  {
     display: block;
-    padding: 10px 0;
-    border-top: 1px solid #18635F;
+    padding: 0;
+    border-top: 0;
 }
   
   .navtoggle.responsive li:last-child  {
@@ -397,7 +394,7 @@ Medium devices (640px and larger)
 
     .navtoggle li:last-child {
         display: none;
-    }  
+    } 
 
     body {
         font-size: 18px;
